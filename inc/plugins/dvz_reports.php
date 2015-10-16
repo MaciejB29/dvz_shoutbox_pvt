@@ -388,7 +388,7 @@ function isBanned($uid) {
     global $db;
 
     $uid = $db->escape_string($uid);
-    $query = $db->simple_select(''.TABLE_PREFIX.'dvz_reports_banned', 'uid', "uid='". $uid."'");
+    $query = $db->simple_select('dvz_reports_banned', 'uid', "uid='". $uid."'");
     if($query->num_rows === 1) {
         return true;
     }
