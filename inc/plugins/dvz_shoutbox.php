@@ -105,8 +105,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;');
 </div>';
 
     $template_shoutbox = '
-<div id="shoutbox" class="front{$classes}">
-
+<div id="shoutbox" class="front{$classes} tborder"  style="width: 99.80%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
 <div class="thead">
 {$lang->dvz_sb_shoutbox}
 <span style="float:right;"><a href="{$mybb->settings[\'bburl\']}/index.php?action=shoutbox_archive">&laquo; {$lang->dvz_sb_archivelink}</a></span>
