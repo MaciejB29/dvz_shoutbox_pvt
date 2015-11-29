@@ -810,7 +810,7 @@ dvz_shoutbox.lang = [\'' . $lang->dvz_sb_delete_confirm . '\', \'' . str_replace
 
         $message = $parser->parse_message($message, $options);
         $message = $parser->mycode_auto_url($message);
-        $message = $post = preg_replace('/\[url](.+?)\[\/url\]/', '<a href="\1" target="_blank">\1</a>', $message);
+        $message = $post = preg_replace('/\[url](.+?)\[\/url\]/', '\1', $message);
         return $message;
 
     }
