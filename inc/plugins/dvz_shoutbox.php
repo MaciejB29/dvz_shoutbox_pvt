@@ -801,7 +801,7 @@ dvz_shoutbox.lang = [\'' . $lang->dvz_sb_delete_confirm . '\', \'' . str_replace
 
         $parser = new postParser;
         $options = array(
-            'allow_mycode'      =>  0,
+            'allow_mycode'      => $mybb->settings['dvz_sb_mycode'],
             'allow_smilies'     => $mybb->settings['dvz_sb_smilies'],
             'allow_imgcode'     =>  0,
             'filter_badwords'   =>  1,
