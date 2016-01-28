@@ -31,7 +31,8 @@ function dvz_reports_activate()
     $insert_array = array(
         'title' => 'dvz_reports_menu',
         'template' => $db->escape_string('<tr>
-		<td class="tcat tcat_menu tcat_collapse{$collapsedimg[\'modcpusers\']}">
+		<td class="tcat tcat_menu tcat_collapse{$collapsedimg[\'modcpshouts\']}">
+			<div class="expcolimage"><img src="{$mybb->settings['bburl']}/images/collapse{$collapsedimg[\'modcpshouts\']}.png" id="modcpshouts_img" class="expander" alt="[-]" title="[-]" /></div>
 			<div><span class="smalltext"><strong>{$lang->shoutbox}</strong></span></div>
 		</td>
 	</tr>
